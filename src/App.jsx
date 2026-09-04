@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -10,7 +6,6 @@ import BlogPost from "./Pages/BlogPost";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
 import Category from "./Pages/Category";
-
 
 function NotFound() {
   return (
@@ -39,15 +34,11 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug"element={<BlogPost />}/>
-            <Route path="/category/:slug"element={<Category />}/>
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/category/:slug" element={<Category />} />
 
-            <Route
-              path="*"
-              element={<NotFound />}
-            />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 
