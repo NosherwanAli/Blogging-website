@@ -11,14 +11,15 @@ import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
 import Category from "./Pages/Category";
 
+
 function NotFound() {
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
-      <p className="text-7xl font-bold text-purple-600">
+      <p className="text-7xl font-bold text-[#00E56B]">
         404
       </p>
 
-      <h1 className="mt-4 text-3xl font-bold text-gray-900">
+      <h1 className="mt-4 text-3xl font-bold text-[#10162F]">
         Page Not Found
       </h1>
 
